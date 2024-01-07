@@ -1,0 +1,53 @@
+.c-hamburger {
+  $this: &;
+  $icon-color: var(--c-gray-primary);
+
+  @include flex-center;
+  position: relative;
+  width: 4rem;
+  height: 3.2rem;
+
+  &__icon {
+    position: relative;
+    width: 2rem;
+    height: 0.2rem;
+    background: $icon-color;
+    transition: all 0.2s;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background: $icon-color;
+      transition: transform 0.2s;
+    }
+
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      top: 0.5rem;
+    }
+
+    &--close {
+      background: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(-135deg);
+      }
+
+      &::after {
+        transform: rotate(135deg);
+      }
+    }
+  }
+}

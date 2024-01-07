@@ -1,0 +1,17 @@
+.c-rating {
+  &__star {
+    background-color: #8F919B;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		display: inline-block;
+		height: 1.4rem;
+		width: 1.4rem;
+
+    &--checked {
+      background-color: #FFBC34;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.6rem;
+    }
+  }
+}

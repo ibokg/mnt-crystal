@@ -1,0 +1,179 @@
+.p-index-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+    max-width: 48.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    &:first-child {
+      min-width: 15rem;
+    }
+
+    &:last-child {
+      min-width: 17rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__right {
+    background-image: url('/img/promo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.p-index-features {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2.8rem;
+  }
+}
+
+.p-index-services {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+  
+  &__block {
+    display: grid;
+    grid-template-columns: 36.1rem 36.1rem;
+    gap: 2.8rem;
+    justify-content: center;
+  }
+}
+
+.p-index-advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  &__left {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__right {
+    background-image: url('/img/advantages.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__item-name {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1.5px;
+      background-color: var(--c-primary);
+      border-radius: 0.4rem;
+    }
+  }
+
+  &__item-desc {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+  }
+}
+
+.p-index-book {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: var(--c-white);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: var(--c-primary);
+    border-radius: 1.6rem;
+    padding-right: 7rem;
+  }
+
+  &__bg {
+    flex-basis: 50%;
+    background-image: url('/img/girl-cleaning-the-house.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-top: -9%;
+  }
+
+  &__block {
+    flex-basis: 50%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.p-index-testimonials {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+}

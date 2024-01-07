@@ -1,0 +1,84 @@
+.c-collapsible {
+  $this: &;
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.15s ease-out;
+
+    &:hover {
+      color: var(--c-primary);
+    }
+
+    &::-webkit-details-marker {
+      display:none;
+    }
+  }
+
+  &[open] {
+    #{$this}__summary {
+      color: var(--c-primary);
+    }
+
+    #{$this}__plusminus {
+      &::before {
+        transform: translatey(-50%) rotate(-90deg);
+        opacity: 0;
+      }
+  
+      &::after {
+        transform: translatey(-50%) rotate(0);
+      }
+    }
+  }
+
+  &__plusminus {
+    position: relative;
+	  width: 1.6rem;
+    height: 1.6rem;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      background-color: var(--c-gray-primary);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transition: .15s;
+      width: 100%;
+      height: 2px;
+    }
+    
+    &::before {		
+      transform: translatey(-50%);
+    }
+    
+    &::after {
+      transform: translatey(-50%) rotate(90deg);
+    }
+  }
+
+  &__content {
+    color: var(--c-gray-primary);
+    padding-top: 2rem;
+
+    li {
+      &::before {
+        content: '-';
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__content-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem;
+  }
+}

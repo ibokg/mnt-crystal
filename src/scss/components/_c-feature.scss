@@ -1,0 +1,22 @@
+.c-feature {
+  display: flex;
+
+  &__icon {
+    margin-right: 1.7rem;
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary)
+  }
+}

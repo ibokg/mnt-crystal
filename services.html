@@ -1,0 +1,671 @@
+{% set page = 'services' %}
+{% extends "src/templates/base.html" %}
+
+{% block content %}
+  {% include "src/templates/includes/header.html" %}
+
+  <main class="l-page__content">
+    <section class="p-services-hero">
+      <div class="c-hero">
+        <div class="h-container">
+          <h2 class="c-hero__title h-text-center">Our Services</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-services-type h-container">
+      <div class="p-services-type__block p-services-type__block--1">
+        <h2 class="p-services-type__title t-section-heading h-text-center">Residential Cleaning</h2>
+        <div class="p-services-type__child">
+          <div class="p-services-type__child-block">
+            <h3 class="p-services-type__child-title h-text-center">Standard cleaning</h3>
+            <p class="p-services-type__child-desc h-text-center">Here's what our standard cleaning service includes for each area of your home</p>
+
+            <div class="p-services-type__collapses c-collapses">
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Kitchen</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Wipe and sanitize all countertops.</li>
+                        <li>Clean and disinfect sinks.</li>
+                        <li>Clean the outside of appliances and handles.</li>
+                        <li>Wipe down backsplashes.</li>
+                        <li>Clean glass surfaces.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Vacuum and mop floors.</li>
+                        <li>Clean the outside of the stove hood.</li>
+                        <li>Clean and disinfect stovetops.</li>
+                        <li>Mop kitchen floors.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bathrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Thoroughly clean and sanitize showers and tubs.</li>
+                        <li>Polish faucets and fixtures.</li>
+                        <li>Clean and disinfect toilets.</li>
+                        <li>Wipe down glass doors and surfaces.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Clean and disinfect sinks and counters.</li>
+                        <li>Mop bathroom floors.</li>
+                        <li>Clean and sanitize mirrors.</li>
+                        <li>Wipe down shelves.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bedrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Vacuum floors and carpets.</li>
+                        <li>Wipe down mirrors and shelves.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Mop bedroom floors.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Dust furniture surfaces.</li>
+                        <li>Clean baseboards.</li>
+                        <li>Make beds and change sheets if specified.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Dining Room/Living Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Clean and sanitize glass surfaces.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Wipe down mirrors and shelves.</li>
+                        <li>Mop floors.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Dust furniture surfaces.</li>
+                        <li>Vacuum floors and rugs.</li>
+                        <li>Clean window blinds.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-services-type__child-block">
+            <h3 class="p-services-type__child-title h-text-center">Deep cleaning</h3>
+            <p class="p-services-type__child-desc h-text-center">Experience Unparalleled Cleanliness with Our Deep Cleaning Services</p>
+
+            <div class="p-services-type__collapses c-collapses">
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Kitchen</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Clean and sanitize glass surfaces.</li>
+                        <li>Thoroughly clean stovetops and the outside of appliances/handles.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Wipe down backsplashes and the exterior of trash cans.</li>
+                        <li>Sweep or vacuum and mop floors.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Clean the outside of the stove hood.</li>
+                        <li>Clean and disinfect countertops, sinks, and shelves.</li>
+                        <li>Clean baseboards, cobwebs, and ceiling fans.</li>
+                        <li>Dust furniture and polish metal appliances (faucet, fridge, dishwasher, etc.).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bathrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Deep clean and sanitize showers and tubs.</li>
+                        <li>Polish faucets and mirrors.</li>
+                        <li>Empty and replace trash bags.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Thoroughly clean and disinfect toilets.</li>
+                        <li>Wipe down glass surfaces.</li>
+                        <li>Sweep bathroom floors.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bedrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Sweep and mop bedroom floors.</li>
+                        <li>Clean mirrors and shelves.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Dust furniture and clean baseboards.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Vacuum floors and rugs.</li>
+                        <li>Make beds and change sheets if requested.</li>
+                        <li>Remove cobwebs and clean ceiling fans.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Dining Room/Living Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Clean and sanitize glass surfaces.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Wipe down mirrors and shelves.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Mop floors and vacuum rugs.</li>
+                        <li>Dust furniture, baseboards, and ceiling fans.</li>
+                        <li>Remove cobwebs.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Counters</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Clean and disinfect countertops.</li>
+                        <li>Wipe down shelves.</li>
+                        <li>Mop floors.</li>
+                        <li>Clean sinks, baseboards, and remove cobwebs.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Laundry or Extra Rooms (Add-on)</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Clean the outside of appliances and glass surfaces.</li>
+                        <li>Empty and replace trash bags.</li>
+                        <li>Clean sinks and mirrors.</li>
+                        <li>Sweep and mop floors.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Wipe down shelves.</li>
+                        <li>Vacuum rugs and clean baseboards.</li>
+                        <li>Remove cobwebs.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-services-type__child-block">
+            <h3 class="p-services-type__child-title h-text-center">Move in/out cleaning</h3>
+            <p class="p-services-type__child-desc h-text-center">Here's a detailed overview of what our Move In/Out Cleaning includes for each area</p>
+
+            <div class="p-services-type__collapses c-collapses">
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Kitchen</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Inside and outside cleaning of microwaves and ovens.</li>
+                        <li>Thorough cleaning of glass surfaces, backsplash, and countertops.</li>
+                        <li>Sweeping or vacuuming and mopping floors.</li>
+                        <li>Cleaning mirrors, the outside of stove hoods, and light fixtures.</li>
+                        <li>Attention to ceiling fans, baseboards, sinks, and chrome.</li>
+                        <li>Removal of cobwebs.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Windows, window sills, blinds, and ledges cleaned.</li>
+                        <li>Doors and door frames, inside and outside of cabinets and drawers.</li>
+                        <li>Pantry floor and door, top of refrigerator, baker’s rack, and shelves.</li>
+                        <li>Exterior cleaning of appliances and dusting of furniture.</li>
+                        <li>Polishing metal appliances (faucet, dishwasher, etc.).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bathrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Deep cleaning of showers, tubs, and toilets.</li>
+                        <li>Polishing faucets and mirrors.</li>
+                        <li>Sweeping and mopping floors.</li>
+                        <li>Cleaning counters, shelves, and sinks.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Light fixtures, cobwebs, metal, and glassware detailed.</li>
+                        <li>Air vents, ledges, window blinds, doors, outside of cabinets and drawers.</li>
+                        <li>Baseboards cleaned.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bedrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Thorough vacuuming and sweeping of floors.</li>
+                        <li>Bed making and cleaning inside/outside of cabinets and drawers.</li>
+                        <li>Mirrors, shelves, and cobwebs addressed.</li>
+                        <li>Emptying trash bins, light fixtures, and baseboards cleaned.</li>
+                        <li>Ceiling fans and furniture dusting.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Laundry/Extra Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Exterior cleaning of appliances and glass surfaces.</li>
+                        <li>Mopping and sweeping floors.</li>
+                        <li>Cleaning mirrors and emptying trash.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Shelves, sinks, and vacuuming rugs attended to.</li>
+                        <li>Light fixtures, baseboards, cobwebs, and counters cleaned.</li>
+                        <li>Window blinds, doors, and furniture detailed.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Dining Room/Living Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Cleaning of glass surfaces and thorough floor mopping/vacuuming.</li>
+                        <li>Emptying trash bins, mirrors, and shelves cleaned.</li>
+                        <li>Cobweb removal and attention to ceiling fans and baseboards.</li>
+                        <li>Vacuuming of floors and rugs, cleaning doors and ledges.</li>
+                        <li>Light fixtures and furniture dusting.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-services-type__child-block">
+            <h3 class="p-services-type__child-title h-text-center">Post Construction Cleaning</h3>
+            <p class="p-services-type__child-desc h-text-center">Cleaning service is designed to breathe life into your newly constructed or renovated space. Delve into the details of what our service encompasses</p>
+
+            <div class="p-services-type__collapses c-collapses">
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Kitchen</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>In-depth cleaning of newly installed or renovated appliances.</li>
+                        <li>Removal of construction dust from glass surfaces, backsplash, and countertops.</li>
+                        <li>Sweeping, vacuuming, and mopping floors to unveil the beauty beneath.</li>
+                        <li>Cleaning of newly installed or renovated light fixtures and ceiling fans.</li>
+                        <li>Attention to baseboards, sinks, and chrome fixtures.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Elimination of construction-related cobwebs.</li>
+                        <li>Thorough cleaning of windows, window sills, blinds, and ledges.</li>
+                        <li>Detailed cleaning of newly installed cabinets and drawers.</li>
+                        <li>Polishing of metal appliances to showcase their brilliance.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bathrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Precision cleaning of newly installed or renovated showers, tubs, and toilets.</li>
+                        <li>Polishing of newly added faucets and mirrors.</li>
+                        <li>Sweeping and mopping of floors to reveal their pristine state</li>
+                        <li>Detailed cleaning of newly installed or renovated counters, shelves, and sinks.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Attention to light fixtures, cobwebs, and metal and glassware.</li>
+                        <li>Cleaning of air vents, ledges, window blinds, doors, and exterior of cabinets and drawers.</li>
+                        <li>Baseboards receive a meticulous cleaning.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Bedrooms</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Careful vacuuming and sweeping of floors to highlight the newness.</li>
+                        <li>Attention to the meticulous details of newly installed or renovated cabinets and drawers.</li>
+                        <li>Cleaning of mirrors, shelves, and the elimination of cobwebs.</li>
+                        <li>Emptying of trash bins and dusting of light fixtures.</li>
+                        <li>Cleaning of ceiling fans and furniture</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Laundry/Extra Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Detailed cleaning of newly installed or renovated appliances and glass surfaces.</li>
+                        <li>Mopping and sweeping of floors to unveil their pristine condition.</li>
+                        <li>Cleaning of mirrors and thorough emptying of trash bins.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Attention to shelves, sinks, and vacuuming of rugs.</li>
+                        <li>Cleaning of light fixtures, baseboards, cobwebs, and counters.</li>
+                        <li>Detailed cleaning of window blinds, doors, and furniture.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Dining Room/Living Room</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <div class="c-collapsible__content-lists">
+                      <ul>
+                        <li>Cleaning of glass surfaces and meticulous mopping or vacuuming of newly installed or renovated floors.</li>
+                        <li>Emptying of trash bins, cleaning of mirrors, and detailed attention to shelves.</li>
+                        <li>Elimination of post-construction cobwebs.</li>
+                      </ul>
+
+                      <ul>
+                        <li>Thorough cleaning of ceiling fans and baseboards.</li>
+                        <li>Vacuuming of newly installed or renovated floors and rugs.</li>
+                        <li>Cleaning of doors, ledges, light fixtures, and furniture dusting.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="p-services-type__block p-services-type__block--2">
+        <h2 class="p-services-type__title t-section-heading h-text-center">Office Cleaning</h2>
+        <div class="p-services-type__child">
+          <div class="p-services-type__child-block">
+            <p class="p-services-type__child-desc h-text-center" style="max-width: 52rem; margin-bottom: 2rem;">Our dedicated team of professionals is equipped to handle a wide range of cleaning tasks tailored to meet the unique needs of your office environment.</p>
+            <h3 class="p-services-type__child-title h-text-center">Our office cleaning services include</h3>
+
+            <div class="p-services-type__collapses c-collapses">
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Surface Cleaning</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Dusting and wiping down desks, tables, and other surfaces to maintain a clean and organized workspace.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Floor Care</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Vacuuming or sweeping and mopping floors to remove dirt, dust, and debris.</li>
+                      <li>Carpet cleaning to maintain a fresh and inviting atmosphere.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Restroom Sanitization</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Thorough cleaning and sanitization of restroom facilities, including toilets, sinks, and countertops.</li>
+                      <li>Restocking of essential supplies such as hand soap, paper towels, and toilet paper.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Kitchen and Breakroom Maintenance</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Cleaning and sanitizing kitchen appliances, countertops, and sinks.</li>
+                      <li>Emptying and cleaning trash receptacles.</li>
+                      <li>Restocking of kitchen supplies as needed.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Window and Glass Cleaning</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Cleaning windows and glass surfaces to enhance natural light and maintain a polished appearance.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Trash Removal</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Regular emptying and disposal of office trash bins.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>High-Touch Point Disinfection</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Thorough disinfection of high-touch areas, such as doorknobs, light switches, and common areas, to promote a healthy and hygienic environment.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              <div class="p-services-type__collapse c-collapses__item">
+                <details class="c-collapsible">
+                  <summary class="c-collapsible__summary">
+                    <span>Customized Cleaning Plans</span>
+                    <span class="c-collapsible__plusminus"></span>
+                  </summary>
+                  <div class="c-collapsible__content content">
+                    <ul>
+                      <li>Tailoring our services to meet your specific needs, whether it's daily, weekly, or customized cleaning schedules.</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>      
+    </section>
+
+    {% include "src/templates/includes/feedback.html" %}
+  </main>
+
+  {% include "src/templates/includes/footer.html" %}
+{% endblock %}

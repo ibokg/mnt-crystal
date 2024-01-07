@@ -1,0 +1,48 @@
+<header class="l-page__header l-header">
+  <div class="l-header__content h-container">
+    <a href="/" class="l-header__logo">
+      <img loading="lazy" src="/img/logo.svg" alt="Crystal Cleaning logo"/>
+    </a>
+
+    <div class="l-header__hamburger h-hidden-desktop">
+      <div role="button" class="c-hamburger js-hamburger">
+        <span class="c-hamburger__icon js-hamburger-icon"></span>
+      </div>
+    </div>
+
+    <div class="l-header__nav-block h-show-only-desktop">
+      <nav class="c-header-nav">
+        <ul class="c-header-nav__list">
+          <li class="c-header-nav__item">
+            <a href="/about_us.html" class="c-header-nav__link {% if page == 'about' %}c-header-nav__link--active{% endif %}">About Us</a>
+          </li>
+
+          <li class="c-header-nav__item">
+            <a href="/services.html" class="c-header-nav__link {% if page == 'services' %}c-header-nav__link--active{% endif %}">Services</a>
+          </li>
+
+          <li class="c-header-nav__item">
+            <a href="/faq.html" class="c-header-nav__link {% if page == 'faq' %}c-header-nav__link--active{% endif %}">FAQ</a>
+          </li>
+
+          <li class="c-header-nav__item">
+            <a href="#" class="c-header-nav__link">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="h-show-only-desktop">
+      <div class="l-header__buttons">
+        <button class="c-btn l-header__button">Instant Quote</button>
+      
+        <a href="#" class="l-header__button">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#7ABCF5"/>
+            <path d="M30.3519 21.7569C30.3519 24.0659 28.5035 25.9147 26.1924 25.9147C23.8821 25.9147 22.0328 24.0659 22.0328 21.7569C22.0328 19.4481 23.8819 17.6 26.1924 17.6C28.5037 17.6 30.3519 19.448 30.3519 21.7569ZM26.1924 34.381C24.2571 34.381 22.5442 34.2213 21.3341 33.7928C20.733 33.5799 20.2981 33.3151 20.0177 33.0091C19.7498 32.7167 19.6 32.3633 19.6 31.9017C19.6 31.441 19.7502 31.0896 20.0188 30.7993C20.3001 30.4951 20.7366 30.2324 21.3394 30.0219C22.5528 29.5981 24.2664 29.444 26.1924 29.444C28.1281 29.444 29.841 29.6036 31.051 30.0321C31.652 30.245 32.0868 30.5099 32.3671 30.8158C32.635 31.1082 32.7848 31.4616 32.7848 31.9233C32.7848 32.384 32.6346 32.7353 32.366 33.0257C32.0846 33.3298 31.6482 33.5925 31.0454 33.803C29.832 34.2268 28.1184 34.381 26.1924 34.381Z" stroke="#7ABCF5" stroke-width="1.2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

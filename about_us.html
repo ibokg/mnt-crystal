@@ -1,0 +1,117 @@
+{% set page = 'about' %}
+{% extends "src/templates/base.html" %}
+
+{% block content %}
+  {% include "src/templates/includes/header.html" %}
+
+  <main class="l-page__content">
+    <section class="p-about-hero">
+      <div class="c-hero">
+        <div class="h-container">
+          <h2 class="c-hero__title h-text-center">About Us</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-about-promo h-container">
+      <div class="p-about-promo__block">
+        <h2 class="p-about-promo__title t-section-heading"><span class="h-text-primary">Welcome</span> to <br>
+          MnT Crystal Cleaning</h2>
+        <p class="p-about-promo__content">
+          Where Cleanliness Meets Excellence<br><br>
+          At MNT Crystal Cleaning, we are more than just a cleaning service; we are your partners in creating a pristine and inviting environment for your home or business. With a commitment to perfection and a passion for cleanliness, we take pride in offering top-notch residential and commercial cleaning services that go beyond the ordinary.
+        </p>
+      </div>
+    </section>
+
+    <section class="p-about-story h-container">
+      <img loading="lazy" src="/img/about-story.png" alt="" class="h-img-fluid">
+      <div class="p-about-story__block">
+        <h2 class="p-about-story__title t-section-heading">Our Story</h2>
+        <p class="p-about-story__content">
+          Founded with a vision to redefine cleaning standards, MNT Crystal Cleaning has evolved into a trusted name in the industry. Our journey began with a simple idea – to provide exceptional cleaning services that not only meet but exceed our clients' expectations. What started as a small local business has now blossomed into a company with a widespread presence, serving clients in various states. <br><br>
+          Driven by a team of dedicated professionals, MNT Crystal Cleaning has always prioritized customer satisfaction. Our story is one of continuous growth and learning, adapting to the ever-changing needs of our clients and the dynamic cleaning industry. We believe in the power of a clean and organized space to enhance well-being, productivity, and overall quality of life.
+        </p>
+      </div>
+    </section>
+
+    <section class="p-about-features">
+      <div class="p-about-features__wrapper h-container">
+        <h3 class="p-about-features__title t-section-heading">Why Choose Us</h3>
+        <div class="p-about-features__blocks">
+          <div class="p-about-features__block">
+            <div class="p-about-features__block-title">Quality Assurance</div>
+            <p class="p-about-features__block-content">
+              Our skilled and trained cleaning professionals are committed to delivering the highest quality of service. We pay attention to the smallest details, ensuring a thorough and impeccable cleaning experience.
+            </p>
+          </div>
+
+          <div class="p-about-features__block">
+            <div class="p-about-features__block-title">Customized Solutions</div>
+            <p class="p-about-features__block-content">
+              We understand that every space is unique, and so are its cleaning requirements. Our services are tailored to meet the specific needs of each client, ensuring a personalized and effective cleaning solution.
+            </p>
+          </div>
+
+          <div class="p-about-features__block">
+            <div class="p-about-features__block-title">Customer-Centric Approach</div>
+            <p class="p-about-features__block-content">
+              Your satisfaction is our priority. We value open communication, transparency, and responsiveness, making sure that your experience with MNT Crystal Cleaning is seamless from start to finish.
+            </p>
+          </div>
+
+          <div class="p-about-features__block">
+            <div class="p-about-features__block-title">Advanced Techniques</div>
+            <p class="p-about-features__block-content">
+              Staying at the forefront of industry advancements, we incorporate the latest cleaning techniques to provide efficient and sustainable cleaning solutions.
+            </p>
+          </div>
+
+          <div class="p-about-features__block">
+            <div class="p-about-features__block-title">Statewide Presence</div>
+            <p class="p-about-features__block-content">
+              MNT Crystal Cleaning is proud to extend its services across various states. Whether you're in need of residential cleaning in the suburbs or commercial cleaning in bustling city centers, we've got you covered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-about-book h-container">
+      <img loading="lazy" src="/img/about-book.png" alt="" class="p-about-book__img h-img-fluid">
+      <div class="p-about-book__wrapper">
+        <h2 class="p-about-book__title t-section-heading">Book and claim<br>
+          <span class="h-text-primary">FIRST CLEANING</span><br>
+          <span style="color: #F3C54C;">DISCOUNT</span> Today!
+        </h2>
+
+        <div class="p-about-book__block">
+          <h3 class="p-about-book__subtitle">Residential Cleaning</h3>
+          <p class="p-about-book__content">
+            Transform your home into a sanctuary with our comprehensive residential cleaning services. From deep cleaning to regular maintenance, we handle it all.
+          </p>
+        </div>
+
+        <div class="p-about-book__block">
+          <h3 class="p-about-book__subtitle">Commercial Cleaning</h3>
+          <p class="p-about-book__content">
+            Create a professional and welcoming atmosphere for your business. Our commercial cleaning services cater to offices, retail spaces, and more.
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="p-about-join">
+      <div class="p-about-join__wrapper h-container">
+        <p class="p-about-join__content h-text-center">
+          Join the growing number of satisfied clients who have entrusted MNT Crystal Cleaning with their cleaning needs. Experience the difference of a cleaner, healthier, and more vibrant living and working space.
+        </p>
+      </div>
+    </section>
+
+    {% include "src/templates/includes/feedback.html" %}
+  </main>
+
+  {% include "src/templates/includes/footer.html" %}
+{% endblock %}

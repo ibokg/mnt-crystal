@@ -1,0 +1,35 @@
+.p-faq-promo {
+  background-image: url('/img/girl-cleaning-in-the-kitchen.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 50%;
+    padding-left: 10rem;
+  }
+}
+
+.p-faq-collapse {
+  margin-bottom: 5rem;
+
+  &__icon {
+    width: 9.3rem;
+    height: 9.3rem;
+    background: rgba(73, 119, 229, 0.10);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+}

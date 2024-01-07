@@ -1,0 +1,50 @@
+.p-services-hero {
+  background-image: url('/img/services-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
+}
+
+.p-services-type {
+  &__block {
+    background-size: 26.4rem;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &--1 {
+      background-image: url('/img/service-residential.png');
+      background-position: top -10rem left;
+    }
+
+    &--2 {
+      background-image: url('/img/service-office.png');
+      background-position: top -2rem left;
+    }
+  }
+
+  &__title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__child {
+
+  }
+
+  &__child-block {
+    margin-bottom: 5rem;
+  }
+
+  &__child-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__child-desc {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+}

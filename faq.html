@@ -1,0 +1,147 @@
+{% set page = 'faq' %}
+{% extends "src/templates/base.html" %}
+
+{% block content %}
+  {% include "src/templates/includes/header.html" %}
+
+  <main class="l-page__content">
+    <section class="p-faq-promo h-container">
+      <h2 class="p-faq-promo__title">
+        <span class="h-text-primary">F</span>requently<br>
+        <span class="h-text-primary">A</span>sked<br>
+        <span class="h-text-primary">Q</span>uestions
+      </h2>
+    </section>
+
+    <section class="p-faq-collapses h-container">
+      <div class="p-faq-collapse">
+        <div class="p-faq-collapse__top">
+          <div class="p-faq-collapse__icon" style="background-image: url('/img/pot.png');"></div>
+          <h2 class="p-faq-collapse__title">General Questions</h2>
+        </div>
+
+        <div class="c-collapses">
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>What services does MnT Crystal Cleaning offer?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                MnT Crystal Cleaning offers a range of cleaning services, including office cleaning, residential cleaning, deep cleaning, and more. Check out our "Services" page for a detailed list.
+              </div>
+            </details>
+          </div>
+
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>How do I book a cleaning service with MnT Crystal Cleaning?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                Booking is easy! You have two convenient options:<br>
+                1. Visit our website and use our user-friendly self-booking form. Choose your preferred service, select a convenient time, and let us take care of the rest.<br>
+                2. Alternatively, feel free to give us a call! Our friendly team is ready to assist you in scheduling your cleaning service over the phone.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-faq-collapse">
+        <div class="p-faq-collapse__top">
+          <div class="p-faq-collapse__icon" style="background-image: url('/img/cost.png');"></div>
+          <h2 class="p-faq-collapse__title">Payment and Billing</h2>
+        </div>
+
+        <div class="c-collapses">
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>What forms of payment does MnT Crystal Cleaning accept?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                MnT Crystal Cleaning exclusively accepts online payments. We have streamlined our process to ensure a secure and convenient payment experience for our clients.
+              </div>
+            </details>
+          </div>
+
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>Why do you only accept online payments?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                Accepting online payments allows us to provide a more efficient and secure service. It eliminates the need for handling cash, streamlines the booking process, and enhances overall convenience for our clients.
+              </div>
+            </details>
+          </div>
+
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>What online payment methods are accepted?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                We accept major credit cards, debit cards, and other secure online payment methods. Our payment system is designed to provide a seamless and hassle-free experience.
+              </div>
+            </details>
+          </div>
+
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>Can I pay in cash for my cleaning service?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                No, we do not accept cash payments. To ensure the security and efficiency of our services, we exclusively accept online payments.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-faq-collapse">
+        <div class="p-faq-collapse__top">
+          <div class="p-faq-collapse__icon" style="background-image: url('/img/discount.png');"></div>
+          <h2 class="p-faq-collapse__title">Discounts and Promotions</h2>
+        </div>
+
+        <div class="c-collapses">
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>Do you offer any discounts for recurring cleaning services?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                Absolutely! Enjoy exclusive discounts when you choose our recurring cleaning services. A consistently clean home comes with extra savings.
+              </div>
+            </details>
+          </div>
+
+          <div class="c-collapses__item">
+            <details class="c-collapsible">
+              <summary class="c-collapsible__summary">
+                <span>Are there any special offers for first-time customers?</span>
+                <span class="c-collapsible__plusminus"></span>
+              </summary>
+              <div class="c-collapsible__content content">
+                Yes! We appreciate your choice in MnT Crystal Cleaning. First-time customers can enjoy a $30 discount on their initial cleaning service.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "src/templates/includes/feedback.html" %}
+  </main>
+
+  {% include "src/templates/includes/footer.html" %}
+{% endblock %}

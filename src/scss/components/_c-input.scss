@@ -1,0 +1,24 @@
+.c-input {
+  &__label {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__field {
+    width: 100%;
+    height: 5rem;
+    background: var(--c-white);
+    border: 1px solid rgba(147, 148, 158, 0.40);
+    border-radius: 2.8rem;
+    outline: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: border-color 0.15s ease-in-out;
+
+    &:focus {
+      border: 1px solid var(--c-primary);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.c-checkbox {
+  $this: &;
+  $border-color: var(--c-gray-primary);
+  $mark-color: var(--c-white);
+  $background-color: var(--c-primary);
+
+  display: inline-block;
+  position: relative;
+  padding-left: 2.8rem;
+  line-height: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+  
+  &--hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    
+    &:checked ~ #{$this}--show:after {
+      display: block;
+    }
+  }
+  
+  &--show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 2px solid $border-color;
+    border-radius: 0.4rem;
+    transition: background-color 0.25s;
+
+    &::after {
+      content: '';
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(45deg);
+      width: 0.5rem;
+      height: 1rem;
+      border: solid $mark-color;
+      border-width: 0 2px 2px 0;
+    }
+  }
+  
+  &--primary {
+    &:checked ~ #{$this}--show {
+      background: $background-color;
+      border: none;
+    }
+    
+    &:disabled ~ #{$this}--show {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
+    &:checked:disabled ~ #{$this}--show {
+      opacity: 0.5;
+      border: none;
+      cursor: not-allowed;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.7;
+  }
+}

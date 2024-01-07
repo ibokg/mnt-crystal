@@ -1,0 +1,39 @@
+.c-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    flex-basis: 50%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+  }
+
+  &__call-block {
+    border-radius: 2.2rem;
+    border: 1.5px solid #4977E5;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px);
+  }
+
+  &__form {
+    padding: 3rem 5rem 3rem 4.6rem;
+    border-radius: 1.6rem;
+    background: var(--c-white);
+    box-shadow: 0 1rem 2.3rem 0 rgba(131, 139, 149, 0.15);
+  }
+
+  &__form-title {
+    margin-bottom: 2rem;
+  }
+
+  &__form-input {
+    margin-bottom: 3rem;
+  }
+
+  &__form-btn {
+    width: 100%;
+  }
+}

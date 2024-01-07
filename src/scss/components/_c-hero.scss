@@ -1,0 +1,12 @@
+.c-hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  // background: rgba(122, 188, 245, 0.70);
+
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--c-white);
+    text-transform: capitalize;
+  }
+}

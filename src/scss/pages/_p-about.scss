@@ -1,0 +1,136 @@
+.p-about-hero {
+  background-image: url('/img/about-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-about-promo {
+  background-image: url('/img/girl-cleaning-in-the-kitchen.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__block {
+    max-width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+  }
+}
+
+.p-about-story {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__block {
+    margin-left: 2.8rem;
+  }
+
+  &__title {
+    margin-bottom: 3.7rem;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+  }
+}
+
+.p-about-features {
+  color: var(--c-white);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #7ABCF5 0%, #1F87E0 100%);
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__block {
+    flex-basis: calc(100% / 3);
+    padding: 2rem;
+  }
+
+  &__block-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    &::before {
+      width: 2.3rem;
+      height: 2.3rem;
+      margin-right: 0.9rem;
+      content: url('data:image/svg+xml,<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.23" d="M11.5 0C5.14873 0 0 5.14873 0 11.5C0 17.8513 5.14873 23 11.5 23C17.8513 23 23 17.8513 23 11.5C22.9926 5.15179 17.8482 0.00739331 11.5 0Z" fill="white"/><path d="M17.774 7.58244L10.8098 16.6089C10.6437 16.8194 10.3961 16.9573 10.1225 16.9916C9.84891 17.026 9.57234 16.9539 9.35494 16.7916L4.38186 12.994C3.94302 12.6586 3.87196 12.0469 4.22315 11.6278C4.57433 11.2086 5.21478 11.1408 5.65362 11.4762L9.80056 14.645L16.1359 6.43287C16.3437 6.13513 16.7059 5.97051 17.0789 6.00438C17.4518 6.03825 17.7751 6.26512 17.9204 6.59493C18.0656 6.92474 18.0094 7.30412 17.774 7.58244Z" fill="white"/></svg>');
+    }
+  }
+
+  &__block-content {
+    font-size: 1.5rem;
+  }
+}
+
+.p-about-book {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 50rem;
+  }
+
+  &__wrapper {
+    margin-left: 2.7rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__block {
+    margin-bottom: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    font-size: 1.5rem;
+    color: var(--c-gray-primary);
+  }
+}
+
+.p-about-join {
+  color: var(--c-white);
+  background-image: url('/img/about-join-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  &__content {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 8.7rem;
+    padding-bottom: 8.7rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}

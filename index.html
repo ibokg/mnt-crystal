@@ -1,0 +1,182 @@
+{% set page = 'index' %}
+{% extends "src/templates/base.html" %}
+
+{% block content %}
+  {% include "src/templates/includes/header.html" %}
+
+  <main class="l-page__content">
+    <section class="p-index-promo h-container">
+      <div class="p-index-promo__left">
+        <h1 class="p-index-promo__title">Welcome to MnT Crystal <span class="h-text-primary">Clean</span>ing</h1>
+        <p class="p-index-promo__content">
+          Where Cleanliness Meets Perfection!<br><br>
+          At <span class="h-text-primary">MnT Crystal Cleaning</span>, we understand the importance of a clean and welcoming space. Our team is dedicated to providing top-notch cleaning services tailored to meet your unique needs. With a commitment to excellence and a touch of crystal-clear perfection, we transform spaces into pristine environments.
+        </p>
+        <div class="p-index-promo__btns">
+          <a href="about_us.html" class="p-index-promo__btn c-btn">About Us</a>
+          <a href="services.html" class="p-index-promo__btn c-btn c-btn--outline">Services</a>
+        </div>
+      </div>
+
+      <div class="p-index-promo__right"></div>
+    </section>
+
+    <section class="p-index-features h-container">
+      <h2 class="p-index-features__title t-section-heading h-text-center">At MnT Crystal Cleaning, we go above and beyond to make your cleaning experience seamless, affordable, and exceptional.</h2>
+      <div class="p-index-features__block">
+        <div class="c-feature">
+          <img loading="lazy" src="/img/calendar.png" alt="" width="52px" height="52px" class="c-feature__icon">
+          <div class="c-feature__content">
+            <h3 class="c-feature__title">Easy Booking with Our Self-Booking Form</h3>
+            <p class="c-feature__desc">
+              We respect your time, and convenience is key. With MnT Crystal Cleaning, scheduling your cleaning service is a breeze. Our user-friendly self-booking form allows you to effortlessly choose your preferred service, select a convenient time, and leave the rest to us. Your time is valuable, and we make sure the booking process reflects that.
+            </p>
+          </div>
+        </div>
+
+        <div class="c-feature">
+          <img loading="lazy" src="/img/cart.png" alt="" width="52px" height="52px" class="c-feature__icon">
+          <div class="c-feature__content">
+            <h3 class="c-feature__title">Special Offers for a Sparkling Home</h3>
+            <p class="c-feature__desc">
+              We believe in making your first experience with us extraordinary. Enjoy a $30 discount on your initial cleaning service when you choose MnT Crystal Cleaning. It's our way of saying thank you for choosing us to bring brilliance to your space.
+            </p>
+          </div>
+        </div>
+
+        <div class="c-feature">
+          <img loading="lazy" src="/img/discount.png" alt="" width="52px" height="52px" class="c-feature__icon">
+          <div class="c-feature__content">
+            <h3 class="c-feature__title">Recurring Cleaning Discounts</h3>
+            <p class="c-feature__desc">
+              Consistency is key to a consistently clean home. With our recurring cleaning services, you not only maintain the brilliance but also enjoy exclusive discounts. Keeping your home sparkling has never been easier. A clean home is just a click away
+            </p>
+          </div>
+        </div>
+
+        <div class="c-feature">
+          <img loading="lazy" src="/img/cost.png" alt="" width="52px" height="52px" class="c-feature__icon">
+          <div class="c-feature__content">
+            <h3 class="c-feature__title">Hassle-Free Instant Free Quote</h3>
+            <p class="c-feature__desc">
+              Curious about the cost? Getting a quote is hassle-free and instant. Use our online quote tool to receive a transparent estimate for your cleaning needs. No hidden fees, just straightforward pricing for the exceptional service you deserve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-index-services h-container">
+      <h2 class="p-index-services__title t-section-heading h-text-center">Our Services</h2>
+      <div class="p-index-services__block">
+        <div class="c-service-card">
+          <div class="c-service-card__icon" style="background-image: url('/img/paper.png');"></div>
+          <div class="c-service-card__name">Residential Cleaning</div>
+          <p class="c-service-card__desc">From bedrooms to bathrooms, we handle it all.</p>
+        </div>
+
+        <div class="c-service-card">
+          <div class="c-service-card__icon" style="background-image: url('/img/brush.png');"></div>
+          <div class="c-service-card__name">Commercial Cleaning</div>
+          <p class="c-service-card__desc">Create an impeccable work environment for success.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-index-advantages h-container">
+      <div class="p-index-advantages__left">
+        <h2 class="p-index-advantages__title t-section-heading">What Sets Us Apart?</h2>
+        <div class="p-index-advantages__list">
+          <div class="p-index-advantages__list-item">
+            <div class="p-index-advantages__item-name">Trained Professionals:</div>
+            <p class="p-index-advantages__item-desc">Our skilled team is trained to deliver meticulous cleaning with a friendly touch.</p>
+          </div>
+
+          <div class="p-index-advantages__list-item">
+            <div class="p-index-advantages__item-name">Eco-Friendly Practices:</div>
+            <p class="p-index-advantages__item-desc">We care for your space and the environment. Our cleaning products are eco-friendly and effective.</p>
+          </div>
+
+          <div class="p-index-advantages__list-item">
+            <div class="p-index-advantages__item-name">Personalized Approach:</div>
+            <p class="p-index-advantages__item-desc">Your satisfaction is our priority. We tailor our services to meet your specific requirements.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-index-advantages__right"></div>
+    </section>
+
+    <section class="p-index-book h-container">
+      <div class="p-index-book__wrapper">
+        <div class="p-index-book__bg"></div>
+        <div class="p-index-book__block">
+          <h2 class="p-index-book__title">Book Your Cleaning Today</h2>
+          <p class="p-index-book__content">
+            Ready to experience the brilliance of MnT Crystal Cleaning?  Use our self-booking form now and take the first step towards a cleaner, healthier, and more inviting space.<br><br>
+            Crystal clear spaces await. Book MnT Crystal Cleaning today!
+          </p>
+          <a href="#" class="p-index-book__btn c-btn c-btn--white">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-index-testimonials h-container">
+      <h2 class="p-index-testimonials__title t-section-heading h-text-center">Testimonials</h2>
+      <div class="c-testimonials splide js-testimonials-slider" aria-label="Testimonials slider">
+        <div class="splide__track">
+          <ul class="splide__list h-text-center">
+            <li class="splide__slide">
+              <img loading="lazy" src="/img/tastimonials-1.png" width="60px" height="60px" alt="Kelly A." class="c-testimonials__img">
+              <div class="c-testimonials__name">Kelly A.</div>
+              <div class="c-testimonials__rating c-rating">
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star"></span>
+              </div>
+              <p class="c-testimonials__comment">
+                Exceptional service! Our home has never looked cleaner. The attention to detail and friendly team make this cleaning service a standout. Highly recommend!
+              </p>
+            </li>
+
+            <li class="splide__slide">
+              <img loading="lazy" src="/img/tastimonials-2.png" width="60px" height="60px" alt="Sarah L." class="c-testimonials__img">
+              <div class="c-testimonials__name">Sarah L.</div>
+              <div class="c-testimonials__rating c-rating">
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+              </div>
+              <p class="c-testimonials__comment">
+                Reliable and trustworthy! From the first cleaning to our regular service, this company has been a game-changer. The consistency and dedication to quality are truly commendable. Thank you for making our lives easier!
+              </p>
+            </li>
+
+            <li class="splide__slide">
+              <img src="/img/tastimonials-3.png" width="60px" height="60px" alt="Andrew M." class="c-testimonials__img">
+              <div class="c-testimonials__name">Andrew M.</div>
+              <div class="c-testimonials__rating c-rating">
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star c-rating__star--checked"></span>
+                <span class="c-rating__star"></span>
+                <span class="c-rating__star"></span>
+              </div>
+              <p class="c-testimonials__comment">
+                I can't say enough about the exceptional service provided by MnT Crystal Cleaning. From the moment I booked their services online, the experience was seamless and efficient. The self-booking form made it incredibly easy to schedule a cleaning at a time that suited my busy schedule.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include "src/templates/includes/feedback.html" %}
+  </main>
+
+  {% include "src/templates/includes/footer.html" %}
+{% endblock %}
