@@ -1,10 +1,4 @@
 .l-footer {
-  & > div {
-    &:not(:last-child) {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.31);
-    }
-  }
-
   &__main {
     padding-top: 5rem;
     padding-bottom: 4rem;
@@ -12,49 +6,43 @@
     @include respond($bp-large) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
-  }
-
-  &__info {
-    flex-basis: 29.2rem;
-  }
-
-  &__logo {
-    display: inline-block;
-    margin-bottom: 4rem;
-  }
-
-  &__info-text {
-    margin-bottom: 3rem;
-  }
-
-  &__developer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   &__developer-text {
     margin-right: 4rem;
   }
 
-  &__copyright {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+  &__developer-link {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .2s ease;
 
-  &__copyright-list {
-    display: flex;
-  }
-
-  &__copyright-list-item {
-    &:not(:last-child) {
-      margin-right: 3.5rem;
+    @include on-event {
+      opacity: .8;
     }
   }
 
-  &__copyright-list-link {
+  &__contacts-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
     color: var(--c-white);
+  }
+
+  &__contacts-text {
+    margin-left: 1rem;
   }
 }
