@@ -1,27 +1,47 @@
 .p-index-promo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include respond($bp-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   &__title {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 2rem;
+
+    @include respond($bp-large) {
+      font-size: 5rem;
+      line-height: 1.4;
+    }
   }
 
   &__content {
     font-size: 1.5rem;
     color: var(--c-gray-primary);
-    max-width: 48.8rem;
     margin-bottom: 2rem;
+
+    @include respond($bp-large) {
+      max-width: 48.8rem;
+    }
   }
 
   &__btns {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    @include respond($bp-large) {
+      justify-content: start;
+    }
   }
 
   &__btn {
@@ -32,69 +52,104 @@
     &:last-child {
       min-width: 17rem;
     }
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
   }
 
   &__right {
-    background-image: url('/img/promo-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    @include respond($bp-large) {
+      background-image: url('/img/promo-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
   }
 }
 
 .p-index-features {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
-  &__title {
-    margin-bottom: 5rem;
-  }
-
-  &__block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 2.8rem;
-  }
-}
-
-.p-index-services {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-
-  &__title {
-    margin-bottom: 5rem;
-  }
-  
-  &__block {
-    display: grid;
-    grid-template-columns: 36.1rem 36.1rem;
-    gap: 2.8rem;
-    justify-content: center;
-  }
-}
-
-.p-index-advantages {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  &__left {
+  @include respond($bp-large) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  &__right {
-    background-image: url('/img/advantages.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+  &__title {
+    margin-bottom: 3rem;
+
+    @include respond($bp-large) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__block {
+    display: grid;
+    gap: 4rem 2.8rem;
+
+    @include respond($bp-large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.p-index-services {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include respond($bp-large) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   &__title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+
+    @include respond($bp-large) {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  &__block {
+    display: grid;
+    gap: 2.8rem;
+    justify-content: center;
+
+    @include respond($bp-medium) {
+      grid-template-columns: 36.1rem 36.1rem;
+    }
+  }
+}
+
+.p-index-advantages {
+  @include respond($bp-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  &__left {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @include respond($bp-large) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__right {
+    @include respond($bp-large) {
+      background-image: url('/img/advantages.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+
+    @include respond($bp-large) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__list-item {
@@ -130,31 +185,44 @@
 }
 
 .p-index-book {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: var(--c-white);
 
+    @include respond($bp-large) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
     background: var(--c-primary);
     border-radius: 1.6rem;
-    padding-right: 7rem;
+    padding: 1.6rem;
+
+    @include respond($bp-large) {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 7rem;
+    }
   }
 
   &__bg {
-    flex-basis: 50%;
-    background-image: url('/img/girl-cleaning-the-house.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    margin-top: -9%;
+    @include respond($bp-large) {
+      flex-basis: 50%;
+      background-image: url('/img/girl-cleaning-the-house.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      margin-top: -9%;
+    }
   }
 
   &__block {
-    flex-basis: 50%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    @include respond($bp-large) {
+      flex-basis: 50%;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
   }
 
   &__title {
@@ -170,10 +238,19 @@
 }
 
 .p-index-testimonials {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include respond($bp-large) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   &__title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+
+    @include respond($bp-large) {
+      margin-bottom: 5rem;
+    }
   }
 }

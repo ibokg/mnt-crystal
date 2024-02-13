@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
     cursor: pointer;
     outline: none;
@@ -18,6 +18,10 @@
 
     &::-webkit-details-marker {
       display:none;
+    }
+
+    @include respond($bp-large) {
+      font-size: 2rem;
     }
   }
 
@@ -78,7 +82,10 @@
 
   &__content-lists {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2.8rem;
+
+    @include respond($bp-large) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
