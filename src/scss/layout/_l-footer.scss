@@ -1,12 +1,14 @@
 .l-footer {
   &__main {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     @include respond($bp-large) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
     }
   }
 

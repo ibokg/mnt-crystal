@@ -18,17 +18,30 @@
     font-size: 1.5rem;
     color: var(--c-gray-primary);
     max-width: 66.3rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
   }
 
   .splide__arrow {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     background: var(--c-primary);
+    top: 30%;
+
+    @include respond($bp-large) {
+      width: 3em;
+      height: 3em;
+      top: 50%;
+    }
 
     svg {
+      width: 0.8em;
+      height: 0.8em;
       fill: var(--c-white);
       
+      @include respond($bp-large) {
+        width: 1.2em;
+        height: 1.2em;
+      }
     }
   }
 }

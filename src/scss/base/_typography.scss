@@ -16,7 +16,11 @@ button {
 }
 
 .t-section-heading {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+
+  @include respond($bp-large) {
+    font-size: 4rem;
+  }
 }
